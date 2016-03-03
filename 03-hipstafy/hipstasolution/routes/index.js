@@ -5,10 +5,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Hipstafy' });
 });
+
 /* hipsta-this-shit */
 var formInfo;
-router.post('/hipstasolution', function (req, res, next) {
-  req.body;
+router.post('/', function (req, res, next) {
   formInfo = req.body;
   console.log(formInfo);
 });
